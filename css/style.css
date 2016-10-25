@@ -1,0 +1,282 @@
+/**useful
+#cfe4ff lt blue
+#fed7c8 pink
+#051876 navy
+#f6f6f6 gray
+#e1cfff violet**/
+* {
+    -moz-box-sizing: border-box;
+/* Firexfox */
+    -webkit-box-sizing: border-box;
+/* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+/* IE */
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+body{
+  font-family: "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  /*background: #ddd;*/
+  /*color: #221e1f;*/
+
+}
+
+/**header**/
+.logo{
+  height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+
+header{
+  width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+}
+span {
+      padding-bottom: 50px;
+      width: 10%;
+      display: block;
+      margin: 10px 40px;
+    }
+
+h1 a:hover { 
+	text-align: center; padding: 10px 0 0 0; font-size: 1.1em; 
+}
+*main nav*
+#main-nav li{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 14px;
+    letter-spacing: 2px;
+}
+.column-left {
+	float:left;
+}
+.column-right {
+	float:right;
+}
+aside#sidebar {
+	/*width:250px;*/
+	/*position: fixed;*/
+}
+
+nav#main-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav#main-nav li {
+	padding:0;
+	border-bottom: 1px solid #fed7c8 ;
+	border-top: 1px solid #fed7c8 ;
+}
+
+.rotating-art {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/bg_water.png);
+    height: 600px;
+    background-position: center center;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+nav#main-nav li a:hover {
+	background:#04049d;
+	color: #fff;
+	text-decoration:none;
+}
+nav#main-nav li a {
+	color: #04049d;
+	font: lighter 15px "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+	display: block;
+	padding: 15px 17px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/**about me section* */
+
+.about-header{
+	color: #f79e7c;
+	font: lighter 30px "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+	display: block;
+	padding: 15px 0px;
+	text-align: center;  
+}
+
+.inner-wrapper {
+	margin: auto;
+  width: 80%;
+  align-content: center;
+  /*background-color: #fed7c8;*/
+  
+}
+
+section#content {
+  text-align: center;
+  padding: 150px 0px;
+  background-color: #ffefe5;
+  display: block;
+  color: #f79e7c;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/**project section**/
+
+/**main body section**/
+/*body{
+	background-color: #c6c6c6;
+}*/
+
+#tiles {
+  /*content: '';*/
+	background-color: white;
+	  float: left;
+	  padding: 25px;
+	  margin: 70px 10%;
+    width: 100%;
+    max-width: 1100px;
+    display: block;
+}
+
+.first-card-wrapper {
+	background-color: #f6f6f6;
+	  width: 300px;
+	  height: 300px;
+	  float: left;
+	  margin: 20px;
+	  align-items: center;
+}
+
+.art-buttons {
+  font: lighter 15px "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width:100%; 
+  margin-top:50%;
+  margin-bottom: 43%;
+  border:1px solid #f79e7c;
+  background-color: #fed7c8;
+  color: white;
+  /*overflow: hidden;*/
+}
+/* Footer */
+
+  #footer {
+    overflow: hidden;
+    clear: both;
+    background-color: #f6f6f6;
+    padding: 5% 7%;
+  }
+  .contact{
+  color: #051876;
+  font: lighter 30px "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+  display: block;
+  padding: 15px 20px;
+  text-align: left; 
+
+  }
+   input, textarea {
+    color: #585858;
+    font-family: "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 1.75;
+    padding: 5px 30px;
+    margin: 10px 20px;
+  }
+ #message{
+  width: 50%;
+  height:100px;
+ }
+
+.getintouch {
+    border: 2px solid #04049d;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: block; /* change this from inline-block */
+    width:20%; /* setting the width */
+    /*margin:0 auto;  this will center  it */
+    padding: 10px 10px;
+    position:relative;
+    font: lighter 15px "Monaco", "Helvetica Neue Light", Helvetica, Sans-serif;
+}
+ /*a:visited {
+    color: #051876;
+}*/
+
+/**project page**/
+.first-card-inside{
+  background-image: url(../images/first-card.jpg);
+  background-size: 300px 300px
+}
+.second-card-inside{
+  background-image: url(../images/second-card-one.jpg);
+  background-size: 300px 300px
+}
+.third-card-inside{
+  background-image: url(../images/third-card-one.jpg);
+  background-size: 300px 300px
+}
+.fourth-card-inside{
+  background-image: url(../images/fourth-card-one.jpg);
+  background-size: 300px 300px
+}
+.fifth-card-inside{
+  background-image: url(../images/fifth-card-one.jpg);
+  background-size: 300px 300px
+}    
+.sixth-card-inside{
+  background-image: url(../images/sixth-card-one.jpg);
+  background-size: 300px 300px
+}  
+.seventh-card-inside{
+  background-image: url(../images/seventh-card-one.jpg);
+  background-size: 300px 300px
+}
+.eigth-card-inside{
+  background-image: url(../images/eigth-card-one.jpg);
+  background-size: 300px 300px
+}    
+.ninth-card-inside{
+  background-image: url(../images/ninth-card-one.jpg);
+  background-size: 300px 300px
+}  
+/* Icon */
+
+  .icons {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+  }
+
+      .icon.style2:before {
+        font-size: 1.1em;
+      }
+
+      .icon.style2:hover {
+        color: #f2849e;
+        border-color: #f2849e;
+     
