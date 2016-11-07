@@ -1,110 +1,164 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
+<head>
+	<meta charset="UTF-8">
 	<title>Kelly Korshak</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-	</head>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
 
-	<body>
+<body>
 	<section id="body">
-			<aside id="sidebar" class="column-left">
-			<header>
-			<!-- Logo -->
-					<a href="index.html" class="logo">
-						<span class="symbol"><img src="images/kelly_logo.png" alt="logo" /></span>
+		<header class="navbar-page-overlay">
+					<!-- Logo -->
+				<div class="navbar-wrapper">	
+					<a class="navbar-logo" href="index.html">
+					<img src="images/kelly_logo.png">
 					</a>
-			</header>
+					<div class="main-nav clear-parent">
+						<div class="hamburger">
+							<span class="burger-bread"></span>
+							<span class="burger-bread"></span>
+							<span class="burger-bread"></span>
+						</div>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="work.html">Projects</a></li>
+							<li><a href="index.html">About</a></li>
+							<li><a href="index.html">Contact</a></li>
+						</ul>
+						<div class="close-nav">
+							<span class="left"></span><span class="right"></span>
+						</div>
+					</nav>
+				  </div>
+				</div>	
+		</header>
+		<!-- *rotating artwork* -->
+		<div class="rotating-art">
+			<section class="hero-section">
 
-				<nav id="main-nav">
-				      <ul>
-				      <li class="nav1"> <a href="work.html">Projects</a></li>
-				      <li class="nav"> <a href="ourteam.html">About</a></li>
-				      <li class="nav"> <a href="blog.html">Contact</a></li>
-                      </ul>
-				  </nav>
+			</section>
+		</div>  
 
-		
-			</aside>
-
-			<!-- *rotating artwork* -->
-			<div class="rotating-art">
-			   <section class="hero-section">
-			  
-			   </section>
-			</div>  
-
-			<!-- *about me* -->
+		<!-- *about me* -->
 		<section id="content" class="column-right">
 
 			<div class="inner-wrapper"> 
-		     <h2 class="about-header">About Me!</h2>
-		     <p class="about-para">I'm a creative image maker focused on illustration, design and digital art.
- 
-				I am a hands-on Creative specializing in creating experiences and products for modern brands. My work strives to explore the intersection of art, culture and technology while pushing its boundaries.
-			</p>
-		  
-	     </div>
-	     </section>
+				<div id="middle-about"<a href="top"></a>About Me!</div>
+				<p class="about-para">I'm a creative image maker focused on illustration, design and digital art.
 
-	     <!-- *project section*  -->
-	  <section id="tiles">
+					I am a hands-on Creative specializing in creating experiences and products for modern brands. My work strives to explore the intersection of art, culture and technology while pushing its boundaries.
+				</p>
 
-       <div class="project-rows">
+			</div>
+		</section>
 
-        <!-- *card-01* -->
-        <div class="first-card-wrapper">
-            <div class="first-card-inside">
-              <button class="art-buttons">design</button>
-            </div>     
-            </div>
-            <!-- *card-02* -->
-        <div class="first-card-wrapper">
-            <div class="first-card-inside">
-              <button class="art-buttons">photography</button>
-            </div>     
-            </div>
-            <!-- *card-03* -->
-        <div class="first-card-wrapper">
-            <div class="first-card-inside">
-              <button class="art-buttons">painting</button>
-            </div>     
-            </div>
+		<!-- *project section*  -->
+		<section id="tiles">
+			<div class="project-tiles">
 
-        </div>
+				<!-- *card-01* -->
+				<div class="first-card-wrapper">
+					<div class="first-card-inside">
+						<div class="project-overlay">
+							<button class="button art-buttons"> <a href="calendar.html">calendar</a></button>
+						</div>
+					</div>     
+				</div>
+				<!-- *card-02* -->
+				<div class="first-card-wrapper">
+					<div class="second-card-inside">
+						<div class="project-overlay">
+							<button class="button art-buttons"> <a href="painting.html">painting</a></button>
+						</div>
+					</div>     
+				</div>
 
+				<!-- *card-03* -->
+				<div class="first-card-wrapper">
+					<div class="third-card-inside">
+						<div class="project-overlay">
+							<button class="art-buttons">photography</button>
+						</div>
+					</div>     
+				</div>
+				<!-- *card-04* -->
+				<div class="first-card-wrapper">
+					<div class="fourth-card-inside">
+						<div class="project-overlay">
+							<button class="art-buttons">portraits</button>
+						</div>     
+					</div>
+				</div>
+				<!-- *card-05* -->
+				<div class="first-card-wrapper">
+					<div class="sixth-card-inside">
+						<div class="project-overlay">
+							<button class="art-buttons">Vector</button>
+						</div>     
+					</div>
+				</div>
+
+				<!-- *card-06* -->
+				<div class="first-card-wrapper">
+					<div class="fifth-card-inside">
+						<div class="project-overlay">
+							<button class="art-buttons">logos</button>
+						</div>     
+					</div>
+				</div>
+
+			</div>
+			<div class="button-container">
+				<button class="view-more-button"> <a href="work.html">View More Work</a></button>
+			</div>
+		</section>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<div id="bottom-contact"<a href="top"></a>Get in touch</div>
+			<form method="post" action="#">
+				<div class="name-field">
+					<input type="text" name="name" id="name" placeholder="Name">
+				</div>
+				<div class="email-field">
+					<input type="email" name="email" id="email" placeholder="Email">
+				</div>
+				<div class="message-field">
+					<textarea name="message" id="message" placeholder="Message"></textarea>
+				</div>
+				<div class="actions">
+					<div class="getintouch"> get in touch</div>
+				</div>
+			</form>
+			<section class="icon-footer">
+				<ul class="icons">
+					<li class="facebook"> <a href="https://www.facebook.com/profile.php?id=20725592s"> 
+						<img src="images/facebook.png">
+					</a></li>
+					<li class="instagram"> <a href="https://www.instagram.com/kellyannkor/"> 
+						<img src="images/instagram.png">
+					</a></li>
+					<li class="linkedin"> <a href="https://www.linkedin.com/in/kelly-korshak-77b9a216"> 
+						<img src="images/linkedin.png">
+					</a></li>
+				</ul>
 			</section>
 		</section>
 
-		<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2 class= "contact">Get in touch</h2>
-								<form class="post" action="#">
-									<div class="name-field">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="email-field">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="message-field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Get in Touch" class="getintouch" /></li>
-									</ul>
-								</form>
-								<section>
-								<ul class="icons">
-									<li class="facebook"> <a href="https://www.facebook.com/">facebook</a></li>
-								</ul>
-							</section>
-							</section>
-	     
-	     </div>
-	     </section>
-
-	</body>
+	</div>
+</footer>
+</section>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
 
 </html>
