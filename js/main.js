@@ -39,4 +39,9 @@ $("#middle-about").on("click", function(){
     $(".about-para").slideToggle();
 });
 
+// *pop up for email section*
+document.getElementById("getintouch").onclick = function(){
+    window.alert("Thank you for your message :)");
+}
+
 
