@@ -40,8 +40,24 @@ $("#middle-about").on("click", function(){
 });
 
 // *pop up for email section*
-document.getElementById("getintouch").onclick = function(){
+$("#getintouch").on("click", function(){
     window.alert("Thank you for your message :)");
-}
+});
 
+// *image rotate*
+var dotIndex = 0;
+var slides = $(".slide");
+$("#switcher li").on("click", function(){
+
+  // switch the dots
+   $("#switcher li").removeClass("active");
+   $(this).addClass("active");
+
+   // switch the image
+   dotIndex = $(this).index();
+   $(".slide").removeClass("active");
+   $(slides[dotIndex]).addClass("active");
+  // var image = $(this).css("background-image");
+  // $("body").css("background-image", image);
+});
 

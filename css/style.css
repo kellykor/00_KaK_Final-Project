@@ -248,34 +248,7 @@ section#content {
   /**calendar page**/
 
   /**slider**/
-  $c1: #3a8999;
-  $c2: #e84a69;
-
-  .slider {
-    width: 800px;
-    margin: 30px 50px 50px;
-  }
-
-  .slick-slide {
-    background: $c1;
-    color: white;
-    padding: 40px 0;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .slick-prev:before, 
-  .slick-next:before {
-    color: black;    
-  }
-
-  .slick-dots {
-    bottom: -30px;
-  }
-
-  .slick-slide:nth-child(odd) {
-   background: $c2;
- }
+ 
 
  .main-calendar{
   background-size: 800px;
@@ -306,16 +279,22 @@ section#content {
   background-image: url(../images/first-card-one.jpg);
   background-size: 400px 400px;
 }
-.image-main {
+.slider {
   display: block;
   margin: 0 0 3em 0;
   width: 100%;
 }
-.image-main img {
+.slider img {
     width: 100%;
     max-width: 800px;
     display: block;
     margin: 0 auto;
+}
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
 }
 h1 {
   /*font-family: "lato", Helvetica, sans-serif;  font-size: 2.75em;*/
@@ -342,6 +321,44 @@ p {
     margin: 0 0 2em 0;
   }
 
+}
+/**image rotator**/
+#switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#switcher li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 15px 15px 0;
+  border-radius: 20px;
+  border: 2px solid #fed7c8;
+  cursor: pointer;
+}
+
+.rotator-container{
+  margin-left: 45%;
+
+}
+
+#switcher li.active {
+  border-color:#051876;
+}
+
+#grayButton {
+  background-color: white;
+}
+#whiteButton {
+  background-color: white;
+}
+#blueButton {
+  background-color: white;
+}
+#yellowButton {
+  background-color: white;
 }
 
 /**hamburger**/
